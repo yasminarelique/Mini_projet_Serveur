@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<world
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='../java/com/ISIS/adventureISIServeur/Classes/worldSchema.xsd'>
+    <name>Rougail saucisse</name>
+    <logo></logo>
+    <money>200</money>
+    <score>5</score>
+    <totalangels>2</totalangels>
+    <activeangels>0</activeangels>
+    <angelbonus>1</angelbonus>
+    <lastupdate>10</lastupdate>
+    <products>
+        <product>
+            <id>1</id>
+            <name>Oignons/Tomates/Ail</name>
+            <logo></logo>
+            <cout>1</cout>
+            <croissance>1</croissance>
+            <revenu>10</revenu>
+            <vitesse>1</vitesse>
+            <quantite>50</quantite>
+            <timeleft>0.5</timeleft>
+            <managerUnlocked>1</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>Pallier 1/3</name>
+                    <logo></logo>
+                    <seuil>500</seuil>
+                    <idcible>1</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Pallier 2/3</name>
+                    <logo></logo>
+                    <seuil>5000</seuil>
+                    <idcible>1</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Pallier 3/3</name>
+                    <logo></logo>
+                    <seuil>500</seuil>
+                    <idcible>1</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+        <product>
+            <id>2</id>
+            <name>Piment</name>
+            <logo></logo>
+            <cout>5</cout>
+            <croissance>6</croissance>
+            <revenu>5</revenu>
+            <vitesse>10</vitesse>
+            <quantite>66</quantite>
+            <timeleft>5</timeleft>
+            <managerUnlocked>2</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>Pallier 1</name>
+                    <logo></logo>
+                    <seuil>500</seuil>
+                    <idcible>2</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Pallier 2</name>
+                    <logo></logo>
+                    <seuil>5000</seuil>
+                    <idcible>2</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Pallier 3</name>
+                    <logo></logo>
+                    <seuil>50000</seuil>
+                    <idcible>2</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+    </products>
+    <allunlocks>
+        <pallier>
+            <name>Quantite * 2</name>
+            <logo></logo>
+            <seuil>800000</seuil>
+            <idcible>1</idcible>
+            <ratio></ratio>
+            <typeratio>GAIN</typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>Isabelle Fontaine</name>
+            <logo></logo>
+            <seuil>1000</seuil>
+            <idcible>2</idcible>
+            <ratio></ratio>
+            <typeratio></typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+    </allunlocks>
+    <upgrades>
+        <pallier>
+            <name>Pallier 1 upgrades (Oignons/Tomates/Ail entier)</name>
+            <logo></logo>
+            <seuil>500000</seuil>
+            <idcible>1</idcible>
+            <ratio></ratio>
+            <typeratio>GAIN</typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>Pallier 2 upgrades (Oignons/Tomates/Ail eplucher) </name>
+            <logo></logo>
+            <seuil>500000</seuil>
+            <idcible>1</idcible>
+            <ratio></ratio>
+            <typeratio>GAIN</typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>Pallier 3 upgrades (Oignons/Tomates/Ail couper)</name>
+            <logo></logo>
+            <seuil>500000</seuil>
+            <idcible>2</idcible>
+            <ratio></ratio>
+            <typeratio>GAIN</typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>Pallier 4 upgrades (Piment espelette)</name>
+            <logo></logo>
+            <seuil>500000</seuil>
+            <idcible>2</idcible>
+            <ratio></ratio>
+            <typeratio>GAIN</typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>Pallier 5 upgrades (Piment yoiseau)</name>
+            <logo></logo>
+            <seuil>500000</seuil>
+            <idcible>1</idcible>
+            <ratio></ratio>
+            <typeratio>GAIN</typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+    </upgrades>
+    <angelupgrades>
+        <pallier>
+            <name>Marie Joseph</name>
+            <logo></logo>
+            <seuil>10000</seuil>
+            <idcible>1</idcible>
+            <ratio></ratio>
+            <typeratio>VITESSE</typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>Jean Marie</name>
+            <logo></logo>
+            <seuil>500000</seuil>
+            <idcible>2</idcible>
+            <ratio></ratio>
+            <typeratio>GAIN</typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+    </angelupgrades>
+    <managers>
+        <pallier>
+            <name>Robert Payet</name>
+            <logo></logo>
+            <seuil>500</seuil>
+            <idcible>1</idcible>
+            <ratio></ratio>
+            <typeratio></typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>Isabelle Fontaine</name>
+            <logo></logo>
+            <seuil>1000</seuil>
+            <idcible>2</idcible>
+            <ratio></ratio>
+            <typeratio></typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+    </managers>
+
+</world>
