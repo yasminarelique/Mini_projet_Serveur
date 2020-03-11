@@ -23,8 +23,59 @@ import javax.xml.bind.Unmarshaller;
 public class Services {
 
     public World getWorld(String username) throws JAXBException {
-        return readWorldFromXml(username);
+        //recupere date courante
+        //regarde le monde stocké
+        //comparer la date de la dernière mise à jour
+        //lastupdate si différent on save
+        World world = readWorldFromXml(username);
+        long timeCurrent = System.currentTimeMillis();
+        long dateDerniere = world.getLastupdate();
+        if(dateDerniere!=timeCurrent){
+           // double score = majScore(world);
+        }
+            
+           // world = saveWorldToXml(username);
+        
+        
+
+        return world; 
     }
+
+ public void majScore(World world){
+
+        List<ProductType> products = world.getProducts().getProduct();
+        long timeCurrent = System.currentTimeMillis();
+        long dateDerniere = world.getLastupdate();
+        long delta = timeCurrent-dateDerniere;
+        
+        for (ProductType p : products) {
+            if(p.isManagerUnlocked())  {
+                int tempsProduit=p.getVitesse();
+                int nbreProduit= (int) (delta/tempsProduit);
+                long tempsRestant=p.getVitesse()-(delta%tempsProduit);
+                p.setTimeleft(tempsRestant);               
+                double argent = p.getRevenu()*nbreProduit;
+                world.setMoney(world.getMoney()+argent);
+                world.setScore(world.getScore()+argent);
+            }
+            else{
+                if(p.getTimeleft()!=0){
+                    if(p.getTimeleft()<delta){
+                        double score = world.getScore();
+                        world.setScore(world.getScore()+p.revenu);
+                        double money = world.getMoney();
+                        world.setMoney(world.getMoney()+p.revenu);
+                    }
+                    else{
+                        long timeleft = p.getTimeleft();
+                        p.setTimeleft(timeleft-delta);
+                    }
+                }
+                
+            }
+        }
+       
+}
 
     public World readWorldFromXml(String username) throws JAXBException {
         String filename = username + "_world.xml";
@@ -58,40 +109,38 @@ public class Services {
     // achat d’une certaine quantité de produit)
     // renvoie false si l’action n’a pas pu être traitée  
     public Boolean updateProduct(String username, ProductType newproduct) throws FileNotFoundException, JAXBException {
-    // aller chercher le monde qui correspond au joueur
+        // aller chercher le monde qui correspond au joueur
         World world = getWorld(username);
 
-    // trouver dans ce monde, le produit équivalent à celui passé
-    // en paramètre
+        // trouver dans ce monde, le produit équivalent à celui passé
+        // en paramètre
         ProductType product = findProductById(world, newproduct.getId());
         if (product == null) {
             return false;
         }
-    // calculer la variation de quantité. Si elle est positive c'est
-    // que le joueur a acheté une certaine quantité de ce produit
-    // sinon c’est qu’il s’agit d’un lancement de production.
+        // calculer la variation de quantité. Si elle est positive c'est
+        // que le joueur a acheté une certaine quantité de ce produit
+        // sinon c’est qu’il s’agit d’un lancement de production.
         int qtchange = newproduct.getQuantite() - product.getQuantite();
         if (qtchange > 0) {
-        // soustraire de l'argent du joueur le cout de la quantité
-    // achetée et mettre à jour la quantité de product 
+            // soustraire de l'argent du joueur le cout de la quantité
+            // achetée et mettre à jour la quantité de product 
             double prix = product.getCout();
             double q = product.getCroissance();
-            double prixSomme = prix*((1-Math.pow(q,qtchange))/(1-q));
+            double prixSomme = prix * ((1 - Math.pow(q, qtchange)) / (1 - q));
             double argent = world.getMoney();
-            double argentRestant = argent-prixSomme;
+            double argentRestant = argent - prixSomme;
             product.setQuantite(newproduct.getQuantite());
             world.setMoney(argentRestant);
-            
-            
-            
-    // soustraire de l'argent du joueur le cout de la quantité
-    // achetée et mettre à jour la quantité de product 
+
+            // soustraire de l'argent du joueur le cout de la quantité
+            // achetée et mettre à jour la quantité de product 
         } else {
             product.setTimeleft(product.getVitesse());
-    // initialiser product.timeleft à product.vitesse
-    // pour lancer la production
+            // initialiser product.timeleft à product.vitesse
+            // pour lancer la production
         }
-    // sauvegarder les changements du monde
+        // sauvegarder les changements du monde
         saveWorldToXml(world, username);
         return true;
     }
@@ -114,13 +163,14 @@ public class Services {
         if (product == null) {
             return false;
         }
-
+        //debloquer le manager de ce produit
+        product.setManagerUnlocked(true);
 
 // soustraire de l'argent du joueur le cout du manager
-            double prixm = manager.getSeuil();
-            double argent = world.getMoney();
-            double argentRestant = argent-prixm;
-            world.setMoney(argentRestant);
+        double prixm = manager.getSeuil();
+        double argent = world.getMoney();
+        double argentRestant = argent - prixm;
+        world.setMoney(argentRestant);
 // sauvegarder les changements au monde
         saveWorldToXml(world, username);
         return true;
@@ -129,22 +179,22 @@ public class Services {
     private ProductType findProductById(World world, int id) {
         ProductType produit = null;
         List<ProductType> products = world.getProducts().getProduct();
-        for (ProductType p: products){
-            if(p.getId()==id){
-                produit=p;
+        for (ProductType p : products) {
+            if (p.getId() == id) {
+                produit = p;
             }
-        }      
+        }
         return produit;
     }
 
     private PallierType findManagerByName(World world, String name) {
-    PallierType manager = null;
+        PallierType manager = null;
         List<PallierType> palliers = world.getManagers().getPallier();
-        for (PallierType m: palliers){
-            if(m.getName().equals(name)){
-                manager=m;
+        for (PallierType m : palliers) {
+            if (m.getName().equals(name)) {
+                manager = m;
             }
-        }      
+        }
         return manager;
     }
 
