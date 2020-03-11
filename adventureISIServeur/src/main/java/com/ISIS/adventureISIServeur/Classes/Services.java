@@ -108,13 +108,19 @@ public class Services {
             return false;
         }
         // débloquer ce manager
+        manager.setUnlocked(true);
 // trouver le produit correspondant au manager
         ProductType product = findProductById(world, manager.getIdcible());
         if (product == null) {
             return false;
         }
-// débloquer le manager de ce produit
+
+
 // soustraire de l'argent du joueur le cout du manager
+            double prixm = manager.getSeuil();
+            double argent = world.getMoney();
+            double argentRestant = argent-prixm;
+            world.setMoney(argentRestant);
 // sauvegarder les changements au monde
         saveWorldToXml(world, username);
         return true;
@@ -134,9 +140,9 @@ public class Services {
     private PallierType findManagerByName(World world, String name) {
     PallierType manager = null;
         List<PallierType> palliers = world.getManagers().getPallier();
-        for (PallierType p: palliers){
-            if(p.getName()==name){
-                manager=p;
+        for (PallierType m: palliers){
+            if(m.getName().equals(name)){
+                manager=m;
             }
         }      
         return manager;
