@@ -140,6 +140,13 @@ public class Services {
             // initialiser product.timeleft à product.vitesse
             // pour lancer la production
         }
+        List<PallierType> pallier = product.getPalliers().getPallier();
+        
+        for (PallierType a : pallier ){
+            if(!a.isUnlocked() && product.getQuantite()>=a.getSeuil()){
+                majPallier(a,product);
+        }
+        }
         // sauvegarder les changements du monde
         saveWorldToXml(world, username);
         return true;
@@ -175,7 +182,30 @@ public class Services {
         saveWorldToXml(world, username);
         return true;
     }
-
+    
+    
+    
+    
+     public Boolean updateUpgrades(String username, PallierType upgrade) throws JAXBException, FileNotFoundException {
+         World world = getWorld(username);
+         ProductType product = null;
+         
+         if(world.getMoney()>=upgrade.getSeuil() && !upgrade.isUnlocked()){
+             if(upgrade.getIdcible()==0){
+                 List<ProductType> listeProduits = world.getProducts().getProduct();
+                 for(ProductType p : listeProduits){
+                     majPallier(upgrade,p);
+                 }
+                 return true;
+             }
+             else {
+                 ProductType p = findProductById(world, upgrade.getIdcible());
+                 majPallier(upgrade,p);
+                 return true;
+             }
+         }
+         return false;
+     }
     private ProductType findProductById(World world, int id) {
         ProductType produit = null;
         List<ProductType> products = world.getProducts().getProduct();
@@ -196,6 +226,25 @@ public class Services {
             }
         }
         return manager;
+    }
+    
+    public void majPallier(PallierType a, ProductType product){
+        
+        if(a.isUnlocked()==false && product.getQuantite()>=a.getSeuil()){
+                a.setUnlocked(true);
+                if(a.getTyperatio()==TyperatioType.VITESSE){
+                   int vit =  product.getVitesse();
+                    vit=(int)(vit*a.getRatio());
+                    product.setVitesse(vit);
+                }
+                else {
+                    if(a.getTyperatio()== TyperatioType.GAIN){
+                    double rev=product.getRevenu();
+                    rev = rev*a.getRatio();
+                    product.setRevenu(rev);
+                    }
+                }
+            }
     }
 
 }

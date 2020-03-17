@@ -8,6 +8,8 @@
 
 package com.ISIS.adventureISIServeur.Classes;
 
+import static java.util.Collections.list;
+import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -73,6 +75,7 @@ public class ProductType {
     protected boolean managerUnlocked;
     @XmlElement(required = true)
     protected PalliersType palliers;
+    
 
     /**
      * Obtient la valeur de la propri�t� id.
@@ -273,5 +276,5 @@ public class ProductType {
     public void setPalliers(PalliersType value) {
         this.palliers = value;
     }
-
+   
 }

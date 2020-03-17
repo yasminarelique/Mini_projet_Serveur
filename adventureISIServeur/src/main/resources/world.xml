@@ -103,7 +103,7 @@ and open the template in the editor.
     </products>
     <allunlocks>
         <pallier>
-            <name>Quantite * 2</name>
+            <name>Unlocks</name>
             <logo></logo>
             <seuil>800000</seuil>
             <idcible>1</idcible>
