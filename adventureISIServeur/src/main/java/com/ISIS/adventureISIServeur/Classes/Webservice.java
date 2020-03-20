@@ -9,6 +9,7 @@ package com.ISIS.adventureISIServeur.Classes;
 
 import java.io.FileNotFoundException;
 import javax.servlet.http.HttpServletRequest;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
@@ -65,4 +66,17 @@ public class Webservice {
        services.updateUpgrades(username, upgrade);
    }
    
+   @DELETE
+   @Path("world")
+   public void deleteWorld(@Context HttpServletRequest request)throws JAXBException, FileNotFoundException {
+   String username = request.getHeader("X-user");
+   services.deleteWorld(username);
+   }
+   
+   @PUT
+   @Path("angelupgrade")
+   public void putAngelUpgrade(@Context HttpServletRequest request,PallierType ange)throws JAXBException, FileNotFoundException {
+       String username = request.getHeader("X-user");
+       services.angelUpgrade(username,ange);
+   }
 }
