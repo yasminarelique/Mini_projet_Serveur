@@ -22,23 +22,26 @@ import javax.xml.bind.Unmarshaller;
  */
 public class Services {
     InputStream input = getClass().getClassLoader().getResourceAsStream("world.xml");
-    public World getWorld(String username) throws JAXBException {
+    public World getWorld(String username) throws JAXBException, FileNotFoundException {
         //recupere date courante
         //regarde le monde stocké
         //comparer la date de la dernière mise à jour
         //lastupdate si différent on save
         World world = readWorldFromXml(username);
-     //   long timeCurrent = System.currentTimeMillis();
-      //  long dateDerniere = world.getLastupdate();
-      //  if(dateDerniere!=timeCurrent){
-           // double score = majScore(world);
-      //  }
-            
-           // world = saveWorldToXml(username);
+        long timeCurrent = System.currentTimeMillis();
+        long dateDerniere = world.getLastupdate();
+        if(dateDerniere==timeCurrent){
+             return world; 
+        }
+        majScore(world);
+        world.setLastupdate(System.currentTimeMillis());
+        
+        saveWorldToXml(world,username);
+        return world; 
         
         
 
-        return world; 
+       
     }
     
     public void deleteWorld(String username)throws JAXBException, FileNotFoundException {
@@ -51,7 +54,6 @@ public class Services {
          nombreAngesTotal+=nombreAngesTotal+angesAjouté;
          
          double score = monde.getScore();
-        
          
          JAXBContext cont = JAXBContext.newInstance(World.class);
             Unmarshaller u = cont.createUnmarshaller();
@@ -65,11 +67,7 @@ public class Services {
     
     public double nombreAngesGagne(World world)throws JAXBException {
         double totalAnges = world.getTotalangels();
-       // double nombreAnges = 150*Math.sqrt((world.getScore())/Math.pow(10,15))-totalAnges;
-        
-        
         double nombreAngesGagnes = Math.round(150 * Math.sqrt(world.getScore()/Math.pow(10, 15))) - totalAnges;
-        
         return nombreAngesGagnes;
         
         
@@ -224,7 +222,6 @@ public class Services {
     
      public Boolean updateUpgrades(String username, PallierType upgrade) throws JAXBException, FileNotFoundException {
          World world = getWorld(username);
-         ProductType product = null;
          
          if(world.getMoney()>=upgrade.getSeuil() && !upgrade.isUnlocked()){
              if(upgrade.getIdcible()==0){
