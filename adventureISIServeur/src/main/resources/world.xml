@@ -21,7 +21,7 @@ and open the template in the editor.
         <product>
             <id>1</id>
             <name>Oignons/Tomates/Ail</name>
-            <logo></logo>
+            <logo>saucisse.jpg</logo>
             <cout>1</cout>
             <croissance>1</croissance>
             <revenu>10</revenu>
@@ -62,7 +62,7 @@ and open the template in the editor.
         <product>
             <id>2</id>
             <name>Piment</name>
-            <logo></logo>
+            <logo>piment.jpg</logo>
             <cout>5</cout>
             <croissance></croissance>
             <revenu>50</revenu>
