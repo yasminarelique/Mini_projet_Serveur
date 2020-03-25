@@ -37,7 +37,7 @@ public class Webservice {
    @GET
    @Path("world")
    @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
-   public Response getXml(@Context HttpServletRequest request) throws JAXBException {
+   public Response getXml(@Context HttpServletRequest request) throws JAXBException, FileNotFoundException {
        String username = request.getHeader("X-user");
       return Response.ok(services.getWorld(username)).build();
       
