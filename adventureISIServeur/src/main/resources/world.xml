@@ -9,8 +9,8 @@ and open the template in the editor.
 <world
     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
     xsi:noNamespaceSchemaLocation='../java/com/ISIS/adventureISIServeur/Classes/worldSchema.xsd'>
-    <name>Rougail saucisse</name>
-    <logo></logo>
+    <name>Les plats reunionnais</name>
+    <logo>chef.png</logo>
     <money></money>
     <score></score>
     <totalangels></totalangels>
@@ -20,38 +20,47 @@ and open the template in the editor.
     <products>
         <product>
             <id>1</id>
-            <name>Oignons/Tomates/Ail</name>
-            <logo>saucisse.jpg</logo>
+            <name>Rougail tomates</name>
+            <logo>rougail_tomate.jpg</logo>
             <cout>1</cout>
             <croissance>1</croissance>
-            <revenu>10</revenu>
-            <vitesse>10</vitesse>
-            <quantite>0</quantite>
+            <revenu>4</revenu>
+            <vitesse>500</vitesse>
+            <quantite></quantite>
             <timeleft></timeleft>
             <managerUnlocked>0</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>Oignons épluché</name>
-                    <logo></logo>
+                    <name>tomates</name>
+                    <logo>tomate.jpg</logo>
                     <seuil>500</seuil>
-                    <idcible>0</idcible>
+                    <idcible>1</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Tomates pretes</name>
-                    <logo></logo>
+                    <name>Oignons</name>
+                    <logo>oignon.jpg</logo>
+                    <seuil>1000</seuil>
+                    <idcible>1</idcible>
+                    <ratio></ratio>
+                    <typeratio>VITESSE</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Sel</name>
+                    <logo>salt-shaker.png</logo>
+                    <seuil>2000</seuil>
+                    <idcible>1</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+				<pallier>
+                    <name>Piment</name>
+                    <logo>piment.jpg</logo>
                     <seuil>5000</seuil>
-                    <idcible>0</idcible>
-                    <ratio></ratio>
-                    <typeratio>GAIN</typeratio>
-                    <unlocked>false</unlocked>
-                </pallier>
-                <pallier>
-                    <name>Pallier 3/3</name>
-                    <logo></logo>
-                    <seuil>500</seuil>
                     <idcible>1</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -59,20 +68,70 @@ and open the template in the editor.
                 </pallier>
             </palliers>
         </product>
-        <product>
+		<product>
             <id>2</id>
-            <name>Piment</name>
-            <logo>piment.jpg</logo>
-            <cout>5</cout>
+            <name>Archard de légumes</name>
+            <logo>achard-de-legumes-creoles.jpeg</logo>
+            <cout>60</cout>
             <croissance></croissance>
-            <revenu>50</revenu>
-            <vitesse>1000</vitesse>
+            <revenu>60</revenu>
+            <vitesse>3000</vitesse>
+            <quantite></quantite>
+            <timeleft></timeleft>
+            <managerUnlocked>0</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>Chou</name>
+                    <logo>chou.jpg</logo>
+                    <seuil>5000</seuil>
+                    <idcible>2</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Carottes</name>
+                    <logo>carotte.png</logo>
+                    <seuil>8000</seuil>
+                    <idcible>2</idcible>
+                    <ratio></ratio>
+                    <typeratio>VITESSE</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+				<pallier>
+                    <name>Haricot vert</name>
+                    <logo></logo>
+                    <seuil>12000</seuil>
+                    <idcible>0</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Curcuma</name>
+                    <logo></logo>
+                    <seuil>15000</seuil>
+                    <idcible>2</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+        <product>
+            <id>3</id>
+            <name>Rougail saucisses</name>
+            <logo>rougail-saucisse-de-la-reunion.jpg</logo>
+            <cout>540</cout>
+            <croissance></croissance>
+            <revenu>720</revenu>
+            <vitesse>6000</vitesse>
             <quantite>66</quantite>
             <timeleft></timeleft>
             <managerUnlocked>0</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>Piment la pate</name>
+                    <name>Saucisses</name>
                     <logo></logo>
                     <seuil>5000</seuil>
                     <idcible>0</idcible>
@@ -81,7 +140,7 @@ and open the template in the editor.
                     <unlocked>False</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Piment oiseau</name>
+                    <name>Tomates</name>
                     <logo></logo>
                     <seuil>5000</seuil>
                     <idcible>0</idcible>
@@ -90,7 +149,202 @@ and open the template in the editor.
                     <unlocked>False</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Piment martin</name>
+                    <name>Ail</name>
+                    <logo></logo>
+                    <seuil>50000</seuil>
+                    <idcible>0</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+				<pallier>
+                    <name>Oignons</name>
+                    <logo></logo>
+                    <seuil>50000</seuil>
+                    <idcible>0</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+				<pallier>
+                    <name>Oignons</name>
+                    <logo></logo>
+                    <seuil>50000</seuil>
+                    <idcible>0</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+		<product>
+            <id>4</id>
+            <name>Carry poulet</name>
+            <logo>poulet.jpg</logo>
+            <cout>4320</cout>
+            <croissance></croissance>
+            <revenu>8640</revenu>
+            <vitesse>12000</vitesse>
+            <quantite>66</quantite>
+            <timeleft></timeleft>
+            <managerUnlocked>0</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>Poulet</name>
+                    <logo></logo>
+                    <seuil>5000</seuil>
+                    <idcible>0</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Tomates</name>
+                    <logo></logo>
+                    <seuil>5000</seuil>
+                    <idcible>0</idcible>
+                    <ratio></ratio>
+                    <typeratio>VITESSE</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Ail</name>
+                    <logo></logo>
+                    <seuil>50000</seuil>
+                    <idcible>0</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+				<pallier>
+                    <name>Oignons</name>
+                    <logo></logo>
+                    <seuil>50000</seuil>
+                    <idcible>0</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+				<pallier>
+                    <name>Oignons</name>
+                    <logo></logo>
+                    <seuil>50000</seuil>
+                    <idcible>0</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+		<product>
+            <id>5</id>
+            <name>Carry cabris</name>
+            <logo>piment.jpg</logo>
+            <cout>51840</cout>
+            <croissance></croissance>
+            <revenu>103680</revenu>
+            <vitesse>24000</vitesse>
+            <quantite>66</quantite>
+            <timeleft></timeleft>
+            <managerUnlocked>0</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>Saucisses</name>
+                    <logo></logo>
+                    <seuil>5000</seuil>
+                    <idcible>0</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Tomates</name>
+                    <logo></logo>
+                    <seuil>5000</seuil>
+                    <idcible>0</idcible>
+                    <ratio></ratio>
+                    <typeratio>VITESSE</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Ail</name>
+                    <logo></logo>
+                    <seuil>50000</seuil>
+                    <idcible>0</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+				<pallier>
+                    <name>Oignons</name>
+                    <logo></logo>
+                    <seuil>50000</seuil>
+                    <idcible>0</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+				<pallier>
+                    <name>Oignons</name>
+                    <logo></logo>
+                    <seuil>50000</seuil>
+                    <idcible>0</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+		<product>
+            <id>6</id>
+            <name>Ti jack boucané</name>
+            <logo>boucane.jpg</logo>
+            <cout>622080</cout>
+            <croissance></croissance>
+            <revenu>1244160</revenu>
+            <vitesse>93000</vitesse>
+            <quantite>66</quantite>
+            <timeleft></timeleft>
+            <managerUnlocked>0</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>Saucisses</name>
+                    <logo></logo>
+                    <seuil>5000</seuil>
+                    <idcible>0</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Tomates</name>
+                    <logo></logo>
+                    <seuil>5000</seuil>
+                    <idcible>0</idcible>
+                    <ratio></ratio>
+                    <typeratio>VITESSE</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Ail</name>
+                    <logo></logo>
+                    <seuil>50000</seuil>
+                    <idcible>0</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+				<pallier>
+                    <name>Oignons</name>
+                    <logo></logo>
+                    <seuil>50000</seuil>
+                    <idcible>0</idcible>
+                    <ratio></ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>False</unlocked>
+                </pallier>
+				<pallier>
+                    <name>Oignons</name>
                     <logo></logo>
                     <seuil>50000</seuil>
                     <idcible>0</idcible>
@@ -170,7 +424,7 @@ and open the template in the editor.
     </upgrades>
     <angelupgrades>
         <pallier>
-            <name>Marie Joseph</name>
+            <name>Christian Antou</name>
             <logo></logo>
             <seuil>10000</seuil>
             <idcible>-1</idcible>
@@ -190,19 +444,55 @@ and open the template in the editor.
     </angelupgrades>
     <managers>
         <pallier>
-            <name>Robert Payet</name>
+            <name>Cristian Antou</name>
             <logo></logo>
-            <seuil>500</seuil>
-            <idcible>0</idcible>
+            <seuil>1000</seuil>
+            <idcible>1</idcible>
             <ratio></ratio>
             <typeratio></typeratio>
             <unlocked>False</unlocked>
         </pallier>
         <pallier>
-            <name>Isabelle Fontaine</name>
+            <name>Jacky Courtois</name>
             <logo></logo>
-            <seuil>1000</seuil>
-            <idcible>0</idcible>
+            <seuil>15000</seuil>
+            <idcible>2</idcible>
+            <ratio></ratio>
+            <typeratio></typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+		<pallier>
+            <name>Philippe Doki-Thonon</name>
+            <logo></logo>
+            <seuil>100000</seuil>
+            <idcible>3</idcible>
+            <ratio></ratio>
+            <typeratio></typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>Kelly Rangama</name>
+            <logo></logo>
+            <seuil>500000</seuil>
+            <idcible>4</idcible>
+            <ratio></ratio>
+            <typeratio></typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+		<pallier>
+            <name>Jean-Alexandre Ouratta</name>
+            <logo></logo>
+            <seuil>1200000</seuil>
+            <idcible>5</idcible>
+            <ratio></ratio>
+            <typeratio></typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>Kevin Minatchi</name>
+            <logo></logo>
+            <seuil>10000000</seuil>
+            <idcible>6</idcible>
             <ratio></ratio>
             <typeratio></typeratio>
             <unlocked>False</unlocked>

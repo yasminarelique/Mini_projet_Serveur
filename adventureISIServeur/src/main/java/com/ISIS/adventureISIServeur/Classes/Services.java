@@ -84,6 +84,7 @@ public class Services {
         
         for (ProductType p : products) {
             if(p.isManagerUnlocked())  {
+                
                 int tempsProduit=p.getVitesse();
                 int nbreProduit= (int) (delta/tempsProduit);
                 long tempsRestant=p.getVitesse()-(delta%tempsProduit);
@@ -96,9 +97,9 @@ public class Services {
                 if(p.getTimeleft()!=0){
                     if(p.getTimeleft()<delta){
                         double score = world.getScore();
-                        world.setScore(world.getScore()+p.revenu);
+                        world.setScore(score+p.revenu);
                         double money = world.getMoney();
-                        world.setMoney(world.getMoney()+p.revenu);
+                        world.setMoney(money+p.revenu);
                     }
                     else{
                         long timeleft = p.getTimeleft();
