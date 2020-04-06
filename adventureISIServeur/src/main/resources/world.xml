@@ -100,7 +100,7 @@ and open the template in the editor.
                 </pallier>
 				<pallier>
                     <name>Haricot vert</name>
-                    <logo></logo>
+                    <logo>haricot.jpg</logo>
                     <seuil>12000</seuil>
                     <idcible>0</idcible>
                     <ratio></ratio>
@@ -109,7 +109,7 @@ and open the template in the editor.
                 </pallier>
                 <pallier>
                     <name>Curcuma</name>
-                    <logo></logo>
+                    <logo>curcuma.jpg</logo>
                     <seuil>15000</seuil>
                     <idcible>2</idcible>
                     <ratio></ratio>
@@ -132,9 +132,9 @@ and open the template in the editor.
             <palliers>
                 <pallier>
                     <name>Saucisses</name>
-                    <logo></logo>
-                    <seuil>5000</seuil>
-                    <idcible>0</idcible>
+                    <logo>saucisse.png</logo>
+                    <seuil>10000</seuil>
+                    <idcible>3</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
                     <unlocked>False</unlocked>
@@ -142,8 +142,8 @@ and open the template in the editor.
                 <pallier>
                     <name>Tomates</name>
                     <logo></logo>
-                    <seuil>5000</seuil>
-                    <idcible>0</idcible>
+                    <seuil>15000</seuil>
+                    <idcible>3</idcible>
                     <ratio></ratio>
                     <typeratio>VITESSE</typeratio>
                     <unlocked>False</unlocked>
@@ -151,8 +151,8 @@ and open the template in the editor.
                 <pallier>
                     <name>Ail</name>
                     <logo></logo>
-                    <seuil>50000</seuil>
-                    <idcible>0</idcible>
+                    <seuil>20000</seuil>
+                    <idcible>3</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
                     <unlocked>False</unlocked>
@@ -160,17 +160,17 @@ and open the template in the editor.
 				<pallier>
                     <name>Oignons</name>
                     <logo></logo>
-                    <seuil>50000</seuil>
-                    <idcible>0</idcible>
+                    <seuil>22500</seuil>
+                    <idcible>3</idcible>
                     <ratio></ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>VITESSE</typeratio>
                     <unlocked>False</unlocked>
                 </pallier>
 				<pallier>
-                    <name>Oignons</name>
+                    <name>Gimgembre.jpg</name>
                     <logo></logo>
-                    <seuil>50000</seuil>
-                    <idcible>0</idcible>
+                    <seuil>25000</seuil>
+                    <idcible>3</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
                     <unlocked>False</unlocked>
@@ -185,51 +185,51 @@ and open the template in the editor.
             <croissance></croissance>
             <revenu>8640</revenu>
             <vitesse>12000</vitesse>
-            <quantite>66</quantite>
+            <quantite></quantite>
             <timeleft></timeleft>
             <managerUnlocked>0</managerUnlocked>
             <palliers>
                 <pallier>
                     <name>Poulet</name>
-                    <logo></logo>
-                    <seuil>5000</seuil>
-                    <idcible>0</idcible>
+                    <logo>viande.jpg</logo>
+                    <seuil>25000</seuil>
+                    <idcible>4</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
                     <unlocked>False</unlocked>
                 </pallier>
                 <pallier>
                     <name>Tomates</name>
-                    <logo></logo>
-                    <seuil>5000</seuil>
-                    <idcible>0</idcible>
+                    <logo>tomate.jpg</logo>
+                    <seuil>30000</seuil>
+                    <idcible>4</idcible>
                     <ratio></ratio>
                     <typeratio>VITESSE</typeratio>
                     <unlocked>False</unlocked>
                 </pallier>
                 <pallier>
                     <name>Ail</name>
-                    <logo></logo>
-                    <seuil>50000</seuil>
-                    <idcible>0</idcible>
+                    <logo>ail.jpg</logo>
+                    <seuil>40000</seuil>
+                    <idcible>4</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
                     <unlocked>False</unlocked>
                 </pallier>
 				<pallier>
                     <name>Oignons</name>
-                    <logo></logo>
+                    <logo>oignon.jpg</logo>
                     <seuil>50000</seuil>
-                    <idcible>0</idcible>
+                    <idcible>4</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
                     <unlocked>False</unlocked>
                 </pallier>
 				<pallier>
-                    <name>Oignons</name>
-                    <logo></logo>
-                    <seuil>50000</seuil>
-                    <idcible>0</idcible>
+                    <name>Gimgembre</name>
+                    <logo>gimgembre.jpg</logo>
+                    <seuil>55000</seuil>
+                    <idcible>4</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
                     <unlocked>False</unlocked>
@@ -244,24 +244,24 @@ and open the template in the editor.
             <croissance></croissance>
             <revenu>103680</revenu>
             <vitesse>24000</vitesse>
-            <quantite>66</quantite>
+            <quantite></quantite>
             <timeleft></timeleft>
             <managerUnlocked>0</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>Saucisses</name>
-                    <logo></logo>
-                    <seuil>5000</seuil>
-                    <idcible>0</idcible>
+                    <name>Viande</name>
+                    <logo>viande.jpg</logo>
+                    <seuil>30000</seuil>
+                    <idcible>5</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
                     <unlocked>False</unlocked>
                 </pallier>
                 <pallier>
                     <name>Tomates</name>
-                    <logo></logo>
-                    <seuil>5000</seuil>
-                    <idcible>0</idcible>
+                    <logo>tomate.jpg</logo>
+                    <seuil>50000</seuil>
+                    <idcible>5</idcible>
                     <ratio></ratio>
                     <typeratio>VITESSE</typeratio>
                     <unlocked>False</unlocked>
@@ -269,7 +269,7 @@ and open the template in the editor.
                 <pallier>
                     <name>Ail</name>
                     <logo></logo>
-                    <seuil>50000</seuil>
+                    <seuil>65000</seuil>
                     <idcible>0</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -278,7 +278,7 @@ and open the template in the editor.
 				<pallier>
                     <name>Oignons</name>
                     <logo></logo>
-                    <seuil>50000</seuil>
+                    <seuil>80000</seuil>
                     <idcible>0</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -287,7 +287,7 @@ and open the template in the editor.
 				<pallier>
                     <name>Oignons</name>
                     <logo></logo>
-                    <seuil>50000</seuil>
+                    <seuil>85000</seuil>
                     <idcible>0</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -308,48 +308,48 @@ and open the template in the editor.
             <managerUnlocked>0</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>Saucisses</name>
-                    <logo></logo>
-                    <seuil>5000</seuil>
-                    <idcible>0</idcible>
+                    <name>Boucané</name>
+                    <logo>viande.jpg</logo>
+                    <seuil>100000</seuil>
+                    <idcible>6</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
                     <unlocked>False</unlocked>
                 </pallier>
                 <pallier>
                     <name>Tomates</name>
-                    <logo></logo>
-                    <seuil>5000</seuil>
-                    <idcible>0</idcible>
+                    <logo>tomate.jpg</logo>
+                    <seuil>122000</seuil>
+                    <idcible>6</idcible>
                     <ratio></ratio>
                     <typeratio>VITESSE</typeratio>
                     <unlocked>False</unlocked>
                 </pallier>
                 <pallier>
                     <name>Ail</name>
-                    <logo></logo>
-                    <seuil>50000</seuil>
-                    <idcible>0</idcible>
+                    <logo>ail.jpg</logo>
+                    <seuil>125000</seuil>
+                    <idcible>6</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
                     <unlocked>False</unlocked>
                 </pallier>
 				<pallier>
                     <name>Oignons</name>
-                    <logo></logo>
-                    <seuil>50000</seuil>
+                    <logo>oignon.jpg</logo>
+                    <seuil>150000</seuil>
                     <idcible>0</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
                     <unlocked>False</unlocked>
                 </pallier>
 				<pallier>
-                    <name>Oignons</name>
-                    <logo></logo>
-                    <seuil>50000</seuil>
-                    <idcible>0</idcible>
+                    <name>Jacques</name>
+                    <logo>jacques.jpg</logo>
+                    <seuil>180000</seuil>
+                    <idcible>6</idcible>
                     <ratio></ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>VITESSE</typeratio>
                     <unlocked>False</unlocked>
                 </pallier>
             </palliers>
@@ -498,5 +498,4 @@ and open the template in the editor.
             <unlocked>False</unlocked>
         </pallier>
     </managers>
-
 </world>
