@@ -57,7 +57,7 @@ and open the template in the editor.
                     <typeratio>GAIN</typeratio>
                     <unlocked>False</unlocked>
                 </pallier>
-				<pallier>
+		<pallier>
                     <name>Piment</name>
                     <logo>piment.jpg</logo>
                     <seuil>5000</seuil>
@@ -98,7 +98,7 @@ and open the template in the editor.
                     <typeratio>VITESSE</typeratio>
                     <unlocked>False</unlocked>
                 </pallier>
-				<pallier>
+		<pallier>
                     <name>Haricot vert</name>
                     <logo>haricot.jpg</logo>
                     <seuil>12000</seuil>
@@ -157,7 +157,7 @@ and open the template in the editor.
                     <typeratio>GAIN</typeratio>
                     <unlocked>False</unlocked>
                 </pallier>
-				<pallier>
+		<pallier>
                     <name>Oignons</name>
                     <logo></logo>
                     <seuil>22500</seuil>
@@ -166,7 +166,7 @@ and open the template in the editor.
                     <typeratio>VITESSE</typeratio>
                     <unlocked>False</unlocked>
                 </pallier>
-				<pallier>
+		<pallier>
                     <name>Gimgembre.jpg</name>
                     <logo></logo>
                     <seuil>25000</seuil>
@@ -177,7 +177,7 @@ and open the template in the editor.
                 </pallier>
             </palliers>
         </product>
-		<product>
+        <product>
             <id>4</id>
             <name>Carry poulet</name>
             <logo>poulet.jpg</logo>
@@ -216,7 +216,7 @@ and open the template in the editor.
                     <typeratio>GAIN</typeratio>
                     <unlocked>False</unlocked>
                 </pallier>
-				<pallier>
+		<pallier>
                     <name>Oignons</name>
                     <logo>oignon.jpg</logo>
                     <seuil>50000</seuil>
@@ -225,7 +225,7 @@ and open the template in the editor.
                     <typeratio>GAIN</typeratio>
                     <unlocked>False</unlocked>
                 </pallier>
-				<pallier>
+                <pallier>
                     <name>Gimgembre</name>
                     <logo>gimgembre.jpg</logo>
                     <seuil>55000</seuil>
@@ -236,7 +236,7 @@ and open the template in the editor.
                 </pallier>
             </palliers>
         </product>
-		<product>
+        <product>
             <id>5</id>
             <name>Carry cabris</name>
             <logo>piment.jpg</logo>
@@ -275,7 +275,7 @@ and open the template in the editor.
                     <typeratio>GAIN</typeratio>
                     <unlocked>False</unlocked>
                 </pallier>
-				<pallier>
+		<pallier>
                     <name>Oignons</name>
                     <logo></logo>
                     <seuil>80000</seuil>
@@ -284,7 +284,7 @@ and open the template in the editor.
                     <typeratio>GAIN</typeratio>
                     <unlocked>False</unlocked>
                 </pallier>
-				<pallier>
+		<pallier>
                     <name>Oignons</name>
                     <logo></logo>
                     <seuil>85000</seuil>
@@ -295,7 +295,7 @@ and open the template in the editor.
                 </pallier>
             </palliers>
         </product>
-		<product>
+	<product>
             <id>6</id>
             <name>Ti jack boucané</name>
             <logo>boucane.jpg</logo>
@@ -334,7 +334,7 @@ and open the template in the editor.
                     <typeratio>GAIN</typeratio>
                     <unlocked>False</unlocked>
                 </pallier>
-				<pallier>
+		<pallier>
                     <name>Oignons</name>
                     <logo>oignon.jpg</logo>
                     <seuil>150000</seuil>
@@ -343,7 +343,7 @@ and open the template in the editor.
                     <typeratio>GAIN</typeratio>
                     <unlocked>False</unlocked>
                 </pallier>
-				<pallier>
+		<pallier>
                     <name>Jacques</name>
                     <logo>jacques.jpg</logo>
                     <seuil>180000</seuil>
@@ -366,9 +366,9 @@ and open the template in the editor.
             <unlocked>False</unlocked>
         </pallier>
         <pallier>
-            <name>Isabelle Fontaine</name>
+            <name>Cuisine avec gaziniere</name>
             <logo></logo>
-            <seuil>1000</seuil>
+            <seuil>10000</seuil>
             <idcible>0</idcible>
             <ratio></ratio>
             <typeratio></typeratio>
@@ -377,7 +377,7 @@ and open the template in the editor.
     </allunlocks>
     <upgrades>
         <pallier>
-            <name>Pallier 1 upgrades (Oignons/Tomates/Ail entier)</name>
+            <name>Cuisine au feu de bois</name>
             <logo></logo>
             <seuil>500000</seuil>
             <idcible>0</idcible>
@@ -424,29 +424,29 @@ and open the template in the editor.
     </upgrades>
     <angelupgrades>
         <pallier>
-            <name>Christian Antou</name>
-            <logo></logo>
-            <seuil>10000</seuil>
+            <name>Marie</name>
+            <logo>marie.png</logo>
+            <seuil>100000</seuil>
             <idcible>-1</idcible>
             <ratio></ratio>
-            <typeratio>VITESSE</typeratio>
+            <typeratio>ANGE</typeratio>
             <unlocked>False</unlocked>
         </pallier>
         <pallier>
             <name>Georges Marie</name>
-            <logo></logo>
+            <logo>joseph.png</logo>
             <seuil>500000</seuil>
             <idcible>-1</idcible>
             <ratio></ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>ANGE</typeratio>
             <unlocked>False</unlocked>
         </pallier>
     </angelupgrades>
     <managers>
         <pallier>
-            <name>Cristian Antou</name>
-            <logo></logo>
-            <seuil>1000</seuil>
+            <name>Christian Antou</name>
+            <logo>fork.png</logo>
+            <seuil>5000</seuil>
             <idcible>1</idcible>
             <ratio></ratio>
             <typeratio></typeratio>
@@ -454,7 +454,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Jacky Courtois</name>
-            <logo></logo>
+            <logo>chapeau.png</logo>
             <seuil>15000</seuil>
             <idcible>2</idcible>
             <ratio></ratio>
@@ -463,8 +463,8 @@ and open the template in the editor.
         </pallier>
 		<pallier>
             <name>Philippe Doki-Thonon</name>
-            <logo></logo>
-            <seuil>100000</seuil>
+            <logo>casserole.png</logo>
+            <seuil>50000</seuil>
             <idcible>3</idcible>
             <ratio></ratio>
             <typeratio></typeratio>
@@ -473,7 +473,7 @@ and open the template in the editor.
         <pallier>
             <name>Kelly Rangama</name>
             <logo></logo>
-            <seuil>500000</seuil>
+            <seuil>750000</seuil>
             <idcible>4</idcible>
             <ratio></ratio>
             <typeratio></typeratio>
@@ -481,8 +481,8 @@ and open the template in the editor.
         </pallier>
 		<pallier>
             <name>Jean-Alexandre Ouratta</name>
-            <logo></logo>
-            <seuil>1200000</seuil>
+            <logo>apron.png</logo>
+            <seuil>1000000</seuil>
             <idcible>5</idcible>
             <ratio></ratio>
             <typeratio></typeratio>
@@ -490,12 +490,13 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Kevin Minatchi</name>
-            <logo></logo>
-            <seuil>10000000</seuil>
+            <logo>cooking.png</logo>
+            <seuil>1020000</seuil>
             <idcible>6</idcible>
             <ratio></ratio>
             <typeratio></typeratio>
             <unlocked>False</unlocked>
         </pallier>
     </managers>
+
 </world>
