@@ -23,7 +23,7 @@ and open the template in the editor.
             <name>Rougail tomates</name>
             <logo>rougail_tomate.jpg</logo>
             <cout>1</cout>
-            <croissance>1</croissance>
+            <croissance></croissance>
             <revenu>4</revenu>
             <vitesse>500</vitesse>
             <quantite></quantite>
@@ -126,7 +126,7 @@ and open the template in the editor.
             <croissance></croissance>
             <revenu>720</revenu>
             <vitesse>6000</vitesse>
-            <quantite>66</quantite>
+            <quantite></quantite>
             <timeleft></timeleft>
             <managerUnlocked>0</managerUnlocked>
             <palliers>
@@ -141,7 +141,7 @@ and open the template in the editor.
                 </pallier>
                 <pallier>
                     <name>Tomates</name>
-                    <logo></logo>
+                    <logo>tomate.jpg</logo>
                     <seuil>15000</seuil>
                     <idcible>3</idcible>
                     <ratio></ratio>
@@ -150,7 +150,7 @@ and open the template in the editor.
                 </pallier>
                 <pallier>
                     <name>Ail</name>
-                    <logo></logo>
+                    <logo>ail.jpg</logo>
                     <seuil>20000</seuil>
                     <idcible>3</idcible>
                     <ratio></ratio>
@@ -159,7 +159,7 @@ and open the template in the editor.
                 </pallier>
 		<pallier>
                     <name>Oignons</name>
-                    <logo></logo>
+                    <logo>oignon.jpg</logo>
                     <seuil>22500</seuil>
                     <idcible>3</idcible>
                     <ratio></ratio>
@@ -167,8 +167,8 @@ and open the template in the editor.
                     <unlocked>False</unlocked>
                 </pallier>
 		<pallier>
-                    <name>Gimgembre.jpg</name>
-                    <logo></logo>
+                    <name>Gimgembre</name>
+                    <logo>gimgembre.jpg</logo>
                     <seuil>25000</seuil>
                     <idcible>3</idcible>
                     <ratio></ratio>
@@ -268,7 +268,7 @@ and open the template in the editor.
                 </pallier>
                 <pallier>
                     <name>Ail</name>
-                    <logo></logo>
+                    <logo>ail.jpg</logo>
                     <seuil>65000</seuil>
                     <idcible>0</idcible>
                     <ratio></ratio>
@@ -277,17 +277,8 @@ and open the template in the editor.
                 </pallier>
 		<pallier>
                     <name>Oignons</name>
-                    <logo></logo>
+                    <logo>oignon.jpg</logo>
                     <seuil>80000</seuil>
-                    <idcible>0</idcible>
-                    <ratio></ratio>
-                    <typeratio>GAIN</typeratio>
-                    <unlocked>False</unlocked>
-                </pallier>
-		<pallier>
-                    <name>Oignons</name>
-                    <logo></logo>
-                    <seuil>85000</seuil>
                     <idcible>0</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -303,7 +294,7 @@ and open the template in the editor.
             <croissance></croissance>
             <revenu>1244160</revenu>
             <vitesse>93000</vitesse>
-            <quantite>66</quantite>
+            <quantite></quantite>
             <timeleft></timeleft>
             <managerUnlocked>0</managerUnlocked>
             <palliers>
@@ -357,15 +348,6 @@ and open the template in the editor.
     </products>
     <allunlocks>
         <pallier>
-            <name>Unlocks</name>
-            <logo></logo>
-            <seuil>800000</seuil>
-            <idcible>0</idcible>
-            <ratio></ratio>
-            <typeratio>GAIN</typeratio>
-            <unlocked>False</unlocked>
-        </pallier>
-        <pallier>
             <name>Cuisine avec gaziniere</name>
             <logo></logo>
             <seuil>10000</seuil>
@@ -374,8 +356,6 @@ and open the template in the editor.
             <typeratio></typeratio>
             <unlocked>False</unlocked>
         </pallier>
-    </allunlocks>
-    <upgrades>
         <pallier>
             <name>Cuisine au feu de bois</name>
             <logo></logo>
@@ -385,6 +365,8 @@ and open the template in the editor.
             <typeratio>GAIN</typeratio>
             <unlocked>False</unlocked>
         </pallier>
+    </allunlocks>
+    <upgrades>
         <pallier>
             <name>Pallier 2 upgrades (Oignons/Tomates/Ail eplucher) </name>
             <logo></logo>
