@@ -44,33 +44,32 @@ public class Services {
        
     }
     
-    public void deleteWorld(String username)throws JAXBException, FileNotFoundException {
+    public World deleteWorld(String username)throws JAXBException, FileNotFoundException {
          World monde = readWorldFromXml(username);
          double angesActifs=monde.getActiveangels();
          double nombreAngesTotal = monde.getTotalangels();
          double angesAjouté = nombreAngesGagne(monde);
-         
-         angesActifs+=angesActifs+angesAjouté;
-         nombreAngesTotal+=nombreAngesTotal+angesAjouté;
-         
          double score = monde.getScore();
+         
+         angesActifs+=angesAjouté;
+         nombreAngesTotal+=angesAjouté;
          
          JAXBContext cont = JAXBContext.newInstance(World.class);
             Unmarshaller u = cont.createUnmarshaller();
             World world = (World) u.unmarshal(input);
             
-             world.setTotalangels(nombreAngesTotal);
-             world.setActiveangels(angesActifs);
-             world.setScore(score);
-             saveWorldToXml(world,username);
+            world.setTotalangels(nombreAngesTotal);
+            world.setActiveangels(angesActifs);
+            world.setScore(score);
+            saveWorldToXml(world,username);
+             
+            return world;
     }
     
     public double nombreAngesGagne(World world)throws JAXBException {
         double totalAnges = world.getTotalangels();
         double nombreAngesGagnes = Math.round(150 * Math.sqrt(world.getScore()/Math.pow(10, 15))) - totalAnges;
         return nombreAngesGagnes;
-        
-        
     }
 
  public void majScore(World world){
@@ -282,15 +281,15 @@ public class Services {
     }
     
     public void angelUpgrade(String username, PallierType ange)throws JAXBException, FileNotFoundException {
-        int a=ange.getSeuil();
+        int seuil=ange.getSeuil();
         World world = getWorld(username);
         double angeActifs=world.getActiveangels();
         
-        double newAngeActifs = angeActifs-a;
+        double newAngeActifs = angeActifs-seuil;
         
         if(ange.getTyperatio()==TyperatioType.ANGE){
             int angelBonus = world.getAngelbonus();
-            angelBonus+=angelBonus+ange.getRatio();
+            angelBonus+=ange.getRatio();
             world.setAngelbonus(angelBonus);
         }
         else {
@@ -298,9 +297,6 @@ public class Services {
         }
         
         world.setActiveangels(newAngeActifs);
-        
-        
-        
     }
 
 }
