@@ -28,7 +28,7 @@ and open the template in the editor.
             <vitesse>500</vitesse>
             <quantite></quantite>
             <timeleft></timeleft>
-            <managerUnlocked>0</managerUnlocked>
+            <managerUnlocked></managerUnlocked>
             <palliers>
                 <pallier>
                     <name>tomates</name>
@@ -78,7 +78,7 @@ and open the template in the editor.
             <vitesse>3000</vitesse>
             <quantite></quantite>
             <timeleft></timeleft>
-            <managerUnlocked>0</managerUnlocked>
+            <managerUnlocked></managerUnlocked>
             <palliers>
                 <pallier>
                     <name>Chou</name>
@@ -128,7 +128,7 @@ and open the template in the editor.
             <vitesse>6000</vitesse>
             <quantite></quantite>
             <timeleft></timeleft>
-            <managerUnlocked>0</managerUnlocked>
+            <managerUnlocked></managerUnlocked>
             <palliers>
                 <pallier>
                     <name>Saucisses</name>
@@ -187,7 +187,7 @@ and open the template in the editor.
             <vitesse>12000</vitesse>
             <quantite></quantite>
             <timeleft></timeleft>
-            <managerUnlocked>0</managerUnlocked>
+            <managerUnlocked></managerUnlocked>
             <palliers>
                 <pallier>
                     <name>Poulet</name>
@@ -239,14 +239,14 @@ and open the template in the editor.
         <product>
             <id>5</id>
             <name>Carry cabris</name>
-            <logo>piment.jpg</logo>
+            <logo>cabris.jpg</logo>
             <cout>51840</cout>
             <croissance></croissance>
             <revenu>103680</revenu>
             <vitesse>24000</vitesse>
             <quantite></quantite>
             <timeleft></timeleft>
-            <managerUnlocked>0</managerUnlocked>
+            <managerUnlocked></managerUnlocked>
             <palliers>
                 <pallier>
                     <name>Viande</name>
@@ -296,7 +296,7 @@ and open the template in the editor.
             <vitesse>93000</vitesse>
             <quantite></quantite>
             <timeleft></timeleft>
-            <managerUnlocked>0</managerUnlocked>
+            <managerUnlocked></managerUnlocked>
             <palliers>
                 <pallier>
                     <name>Boucané</name>
@@ -349,7 +349,7 @@ and open the template in the editor.
     <allunlocks>
         <pallier>
             <name>Cuisine avec gaziniere</name>
-            <logo></logo>
+            <logo>gas.png</logo>
             <seuil>10000</seuil>
             <idcible>0</idcible>
             <ratio></ratio>
@@ -358,7 +358,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Cuisine au feu de bois</name>
-            <logo></logo>
+            <logo>fire.png</logo>
             <seuil>500000</seuil>
             <idcible>0</idcible>
             <ratio></ratio>
@@ -368,37 +368,82 @@ and open the template in the editor.
     </allunlocks>
     <upgrades>
         <pallier>
-            <name>Pallier 2 upgrades (Oignons/Tomates/Ail eplucher) </name>
-            <logo></logo>
-            <seuil>500000</seuil>
-            <idcible>0</idcible>
+            <name>Pilon</name>
+            <logo>rougail_tomate.jpg</logo>
+            <seuil>8000</seuil>
+            <idcible>1</idcible>
+            <ratio></ratio>
+            <typeratio>VITESSE</typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>Légumes déja coupés</name>
+            <logo>achard-de-legumes-creoles.jepg</logo>
+            <seuil>15000</seuil>
+            <idcible>2</idcible>
+            <ratio></ratio>
+            <typeratio>VITESSE</typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>Saucisses fraiches</name>
+            <logo>rougail-saucisse-de-la-reunion.jpg</logo>
+            <seuil>20000</seuil>
+            <idcible>3</idcible>
             <ratio></ratio>
             <typeratio>GAIN</typeratio>
             <unlocked>False</unlocked>
         </pallier>
         <pallier>
-            <name>Pallier 3 upgrades (Oignons/Tomates/Ail couper)</name>
-            <logo></logo>
+            <name>Poulet pays</name>
+            <logo>poulet.jpg</logo>
             <seuil>500000</seuil>
+            <idcible>4</idcible>
+            <ratio></ratio>
+            <typeratio>VITESSE</typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>Feuille de kaloupilé</name>
+            <logo>cabris.jpg</logo>
+            <seuil>800000</seuil>
+            <idcible>5</idcible>
+            <ratio></ratio>
+            <typeratio>GAIN</typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>jacques haché</name>
+            <logo>boucane.jpg</logo>
+            <seuil>1000000</seuil>
+            <idcible>6</idcible>
+            <ratio></ratio>
+            <typeratio>VITESSE</typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>Combava</name>
+            <logo>rougail_tomate.jpg</logo>
+            <seuil>1200000</seuil>
+            <idcible>1</idcible>
+            <ratio></ratio>
+            <typeratio>GAIN</typeratio>
+            <unlocked>False</unlocked>
+        </pallier>
+        <pallier>
+            <name>Légumes du marché</name>
+            <logo>achard-de-legumes-creoles.jepg</logo>
+            <seuil>1500000</seuil>
             <idcible>2</idcible>
             <ratio></ratio>
             <typeratio>GAIN</typeratio>
             <unlocked>False</unlocked>
         </pallier>
         <pallier>
-            <name>Pallier 4 upgrades (Piment espelette)</name>
-            <logo></logo>
-            <seuil>500000</seuil>
-            <idcible>0</idcible>
-            <ratio></ratio>
-            <typeratio>GAIN</typeratio>
-            <unlocked>False</unlocked>
-        </pallier>
-        <pallier>
-            <name>Pallier 5 upgrades (Piment yoiseau)</name>
-            <logo></logo>
-            <seuil>500000</seuil>
-            <idcible>0</idcible>
+            <name>Saucisses fumées</name>
+            <logo>rougail-saucisse-de-la-reunion.jpg</logo>
+            <seuil>2000000</seuil>
+            <idcible>3</idcible>
             <ratio></ratio>
             <typeratio>GAIN</typeratio>
             <unlocked>False</unlocked>
@@ -443,7 +488,7 @@ and open the template in the editor.
             <typeratio></typeratio>
             <unlocked>False</unlocked>
         </pallier>
-		<pallier>
+        <pallier>
             <name>Philippe Doki-Thonon</name>
             <logo>casserole.png</logo>
             <seuil>50000</seuil>
@@ -480,5 +525,4 @@ and open the template in the editor.
             <unlocked>False</unlocked>
         </pallier>
     </managers>
-
 </world>
