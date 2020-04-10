@@ -190,7 +190,7 @@ public class Services {
         } else {
             // initialiser product.timeleft à product.vitesse
             // pour lancer la production
-            product.setTimeleft(product.getVitesse());
+            product.setTimeleft(product.getTimeleft());
             
         }
         List<PallierType> pallier = product.getPalliers().getPallier();
