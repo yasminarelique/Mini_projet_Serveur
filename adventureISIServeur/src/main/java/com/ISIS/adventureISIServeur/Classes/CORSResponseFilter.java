@@ -17,14 +17,14 @@ import javax.ws.rs.ext.Provider;
  */
 @Provider
 public class CORSResponseFilter implements ContainerResponseFilter {
-    
+
     @Override
     public void filter(ContainerRequestContext requestContext, ContainerResponseContext responseContext) {
-   MultivaluedMap<String,Object> headers = responseContext.getHeaders(); 
-   
-   headers.add("Access-Control-Allow-Origin","*");
-   headers.add("Access-Control-Allow-Methods","GET,POST,DELETE,PUT,OPTIONS");
-   headers.add("Access-Control-Allow-Headers","X-Requested-With, Content-Type, X-Codingpedia, authorization, X-User");
-}
-    
+        MultivaluedMap<String, Object> headers = responseContext.getHeaders();
+
+        headers.add("Access-Control-Allow-Origin", "*");
+        headers.add("Access-Control-Allow-Methods", "GET,POST,DELETE,PUT,OPTIONS");
+        headers.add("Access-Control-Allow-Headers", "X-Requested-With, Content-Type, X-Codingpedia, authorization, X-User");
+    }
+
 }

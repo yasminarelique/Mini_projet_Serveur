@@ -23,10 +23,10 @@ and open the template in the editor.
             <name>Rougail tomates</name>
             <logo>rougail_tomate.jpg</logo>
             <cout>1</cout>
-            <croissance></croissance>
+            <croissance>1.05</croissance>
             <revenu>4</revenu>
             <vitesse>500</vitesse>
-            <quantite></quantite>
+            <quantite>1</quantite>
             <timeleft></timeleft>
             <managerUnlocked></managerUnlocked>
             <palliers>
@@ -73,10 +73,10 @@ and open the template in the editor.
             <name>Archard de légumes</name>
             <logo>achard-de-legumes-creoles.jpeg</logo>
             <cout>60</cout>
-            <croissance></croissance>
+            <croissance>1.06</croissance>
             <revenu>60</revenu>
             <vitesse>3000</vitesse>
-            <quantite></quantite>
+            <quantite>0</quantite>
             <timeleft></timeleft>
             <managerUnlocked></managerUnlocked>
             <palliers>
@@ -123,10 +123,10 @@ and open the template in the editor.
             <name>Rougail saucisses</name>
             <logo>rougail-saucisse-de-la-reunion.jpg</logo>
             <cout>540</cout>
-            <croissance></croissance>
+            <croissance>1.07</croissance>
             <revenu>720</revenu>
             <vitesse>6000</vitesse>
-            <quantite></quantite>
+            <quantite>0</quantite>
             <timeleft></timeleft>
             <managerUnlocked></managerUnlocked>
             <palliers>
@@ -182,10 +182,10 @@ and open the template in the editor.
             <name>Carry poulet</name>
             <logo>poulet.jpg</logo>
             <cout>4320</cout>
-            <croissance></croissance>
+            <croissance>1.08</croissance>
             <revenu>8640</revenu>
             <vitesse>12000</vitesse>
-            <quantite></quantite>
+            <quantite>0</quantite>
             <timeleft></timeleft>
             <managerUnlocked></managerUnlocked>
             <palliers>
@@ -241,10 +241,10 @@ and open the template in the editor.
             <name>Carry cabris</name>
             <logo>cabris.jpg</logo>
             <cout>51840</cout>
-            <croissance></croissance>
+            <croissance>1.09</croissance>
             <revenu>103680</revenu>
             <vitesse>24000</vitesse>
-            <quantite></quantite>
+            <quantite>0</quantite>
             <timeleft></timeleft>
             <managerUnlocked></managerUnlocked>
             <palliers>
@@ -291,10 +291,10 @@ and open the template in the editor.
             <name>Ti jack boucané</name>
             <logo>boucane.jpg</logo>
             <cout>622080</cout>
-            <croissance></croissance>
+            <croissance>1.10</croissance>
             <revenu>1244160</revenu>
             <vitesse>93000</vitesse>
-            <quantite></quantite>
+            <quantite>0</quantite>
             <timeleft></timeleft>
             <managerUnlocked></managerUnlocked>
             <palliers>

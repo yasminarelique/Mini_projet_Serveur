@@ -33,10 +33,10 @@ public class Services {
         if(dateDerniere==timeCurrent){
              return world; 
         }
-        majScore(world);
+        world = majScore(world);
         world.setLastupdate(System.currentTimeMillis());
         
-        saveWorldToXml(world,username);
+       // saveWorldToXml(world,username);
         return world; 
         
         
@@ -72,42 +72,52 @@ public class Services {
         return nombreAngesGagnes;
     }
 
- public void majScore(World world){
+ public World majScore(World world){
 
         List<ProductType> products = world.getProducts().getProduct();
         long timeCurrent = System.currentTimeMillis();
         long dateDerniere = world.getLastupdate();
         long delta = timeCurrent-dateDerniere;
         
-        int angelBonus = world.getAngelbonus();
+        
         
         for (ProductType p : products) {
             if(p.isManagerUnlocked())  {
-                
+                //int angelBonus = world.getAngelbonus();
                 int tempsProduit=p.getVitesse();
                 int nbreProduit= (int) (delta/tempsProduit);
                 long tempsRestant=p.getVitesse()-(delta%tempsProduit);
                 p.setTimeleft(tempsRestant);               
-                double argent = p.getRevenu()*nbreProduit*(1+world.getActiveangels()*angelBonus/100);
+                //double argent = p.getRevenu()*nbreProduit*(1+world.getActiveangels()*angelBonus/100);
+               double angeBonus = Math.pow(world.getAngelbonus(), world.getActiveangels());
+               double argent = p.getRevenu() * p.getQuantite() * angeBonus;
                 world.setMoney(world.getMoney()+argent);
                 world.setScore(world.getScore()+argent);
+                long tempsrestant = tempsProduit * (nbreProduit + 1) - delta;
+                p.setTimeleft(tempsrestant);
             }
             else{
                 if(p.getTimeleft()!=0){
                     if(p.getTimeleft()<delta){
+                        double angeBonus = Math.pow(world.getAngelbonus(), world.getActiveangels());
+                        double argent = p.getRevenu() * p.getQuantite() * angeBonus;
                         double score = world.getScore();
-                        world.setScore(score+p.revenu);
+                        world.setScore(score+argent);
                         double money = world.getMoney();
-                        world.setMoney(money+p.revenu);
+                        world.setMoney(money+argent);  
+                        p.setTimeleft(0);
+                        delta -= p.getTimeleft();
                     }
                     else{
                         long timeleft = p.getTimeleft();
                         p.setTimeleft(timeleft-delta);
+                        delta = 0;
                     }
                 }
                 
             }
         }
+        return world;
        
 }
 
@@ -132,7 +142,7 @@ public class Services {
     }
 
     void saveWorldToXml(World world, String username) throws FileNotFoundException, JAXBException {
-        OutputStream output = new FileOutputStream(username + "world.xml");
+        OutputStream output = new FileOutputStream(username + "_world.xml");
         JAXBContext cont = JAXBContext.newInstance(World.class);
         Marshaller m = cont.createMarshaller();
         m.marshal(world, output);
@@ -164,8 +174,13 @@ public class Services {
             double prixSomme = prix * ((1 - Math.pow(q, qtchange)) / (1 - q));
             double argent = world.getMoney();
             double argentRestant = argent - prixSomme;
+            
+            if (argentRestant < 0) {
+                return false;
+            }
             product.setQuantite(newproduct.getQuantite());
             world.setMoney(argentRestant);
+
 
             // soustraire de l'argent du joueur le cout de la quantité
             // achetée et mettre à jour la quantité de product 
