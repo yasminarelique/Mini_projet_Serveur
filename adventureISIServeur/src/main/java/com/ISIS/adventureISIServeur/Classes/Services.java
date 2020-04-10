@@ -80,7 +80,6 @@ public class Services {
         long delta = timeCurrent-dateDerniere;
         
         
-        
         for (ProductType p : products) {
             if(p.isManagerUnlocked())  {
                 //int angelBonus = world.getAngelbonus();
@@ -167,6 +166,10 @@ public class Services {
         // sinon c’est qu’il s’agit d’un lancement de production.
         int qtchange = newproduct.getQuantite() - product.getQuantite();
         if (qtchange > 0) {
+            
+            if (world.getMoney() < 0) {
+                return false;
+            }
             // soustraire de l'argent du joueur le cout de la quantité
             // achetée et mettre à jour la quantité de product 
             double prix = product.getCout();
@@ -175,25 +178,26 @@ public class Services {
             double argent = world.getMoney();
             double argentRestant = argent - prixSomme;
             
+            //si le joueur n'a pas assez d'argent pour payer, on annule l'opération
             if (argentRestant < 0) {
                 return false;
             }
-            product.setQuantite(newproduct.getQuantite());
-            world.setMoney(argentRestant);
-
-
             // soustraire de l'argent du joueur le cout de la quantité
             // achetée et mettre à jour la quantité de product 
+            //on met a jour les quantité de produit et l'argent restant
+            product.setQuantite(newproduct.getQuantite());
+            world.setMoney(argentRestant);
         } else {
-            product.setTimeleft(product.getVitesse());
             // initialiser product.timeleft à product.vitesse
             // pour lancer la production
+            product.setTimeleft(product.getVitesse());
+            
         }
         List<PallierType> pallier = product.getPalliers().getPallier();
         
         for (PallierType a : pallier ){
             if(!a.isUnlocked() && product.getQuantite()>=a.getSeuil()){
-                majPallier(a,product);
+                majPallier(username,a,product);
         }
         }
         // sauvegarder les changements du monde
@@ -232,9 +236,6 @@ public class Services {
         return true;
     }
     
-    
-    
-    
      public Boolean updateUpgrades(String username, PallierType upgrade) throws JAXBException, FileNotFoundException {
          World world = getWorld(username);
          
@@ -242,13 +243,13 @@ public class Services {
              if(upgrade.getIdcible()==0){
                  List<ProductType> listeProduits = world.getProducts().getProduct();
                  for(ProductType p : listeProduits){
-                     majPallier(upgrade,p);
+                     majPallier(username,upgrade,p);
                  }
                  return true;
              }
              else {
                  ProductType p = findProductById(world, upgrade.getIdcible());
-                 majPallier(upgrade,p);
+                 majPallier(username,upgrade,p);
                  return true;
              }
          }
@@ -276,8 +277,8 @@ public class Services {
         return manager;
     }
     
-    public void majPallier(PallierType a, ProductType product){
-        
+    public void majPallier(String username, PallierType a, ProductType product) throws JAXBException, FileNotFoundException{
+        World world = readWorldFromXml(username);
         if(a.isUnlocked()==false && product.getQuantite()>=a.getSeuil()){
                 a.setUnlocked(true);
                 if(a.getTyperatio()==TyperatioType.VITESSE){
@@ -292,6 +293,7 @@ public class Services {
                     product.setRevenu(rev);
                     }
                 }
+                saveWorldToXml(world,username);
             }
     }
     

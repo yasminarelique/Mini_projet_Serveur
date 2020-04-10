@@ -378,7 +378,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Légumes déja coupés</name>
-            <logo>achard-de-legumes-creoles.jepg</logo>
+            <logo>achard-de-legumes-creoles.jpeg</logo>
             <seuil>15000</seuil>
             <idcible>2</idcible>
             <ratio></ratio>
@@ -499,7 +499,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Kelly Rangama</name>
-            <logo></logo>
+            <logo>dish.png</logo>
             <seuil>750000</seuil>
             <idcible>4</idcible>
             <ratio></ratio>
