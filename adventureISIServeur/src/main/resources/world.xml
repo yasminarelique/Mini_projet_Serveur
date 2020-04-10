@@ -33,7 +33,7 @@ and open the template in the editor.
                 <pallier>
                     <name>tomates</name>
                     <logo>tomate.jpg</logo>
-                    <seuil>500</seuil>
+                    <seuil>10</seuil>
                     <idcible>1</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -42,7 +42,7 @@ and open the template in the editor.
                 <pallier>
                     <name>Oignons</name>
                     <logo>oignon.jpg</logo>
-                    <seuil>1000</seuil>
+                    <seuil>100</seuil>
                     <idcible>1</idcible>
                     <ratio></ratio>
                     <typeratio>VITESSE</typeratio>
@@ -51,7 +51,7 @@ and open the template in the editor.
                 <pallier>
                     <name>Sel</name>
                     <logo>salt-shaker.png</logo>
-                    <seuil>2000</seuil>
+                    <seuil>200</seuil>
                     <idcible>1</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -60,7 +60,7 @@ and open the template in the editor.
 		<pallier>
                     <name>Piment</name>
                     <logo>piment.jpg</logo>
-                    <seuil>5000</seuil>
+                    <seuil>500</seuil>
                     <idcible>1</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -83,7 +83,7 @@ and open the template in the editor.
                 <pallier>
                     <name>Chou</name>
                     <logo>chou.jpg</logo>
-                    <seuil>5000</seuil>
+                    <seuil>500</seuil>
                     <idcible>2</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -92,7 +92,7 @@ and open the template in the editor.
                 <pallier>
                     <name>Carottes</name>
                     <logo>carotte.png</logo>
-                    <seuil>8000</seuil>
+                    <seuil>800</seuil>
                     <idcible>2</idcible>
                     <ratio></ratio>
                     <typeratio>VITESSE</typeratio>
@@ -101,7 +101,7 @@ and open the template in the editor.
 		<pallier>
                     <name>Haricot vert</name>
                     <logo>haricot.jpg</logo>
-                    <seuil>12000</seuil>
+                    <seuil>1200</seuil>
                     <idcible>0</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -110,7 +110,7 @@ and open the template in the editor.
                 <pallier>
                     <name>Curcuma</name>
                     <logo>curcuma.jpg</logo>
-                    <seuil>15000</seuil>
+                    <seuil>1500</seuil>
                     <idcible>2</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -133,7 +133,7 @@ and open the template in the editor.
                 <pallier>
                     <name>Saucisses</name>
                     <logo>saucisse.png</logo>
-                    <seuil>10000</seuil>
+                    <seuil>1000</seuil>
                     <idcible>3</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -142,7 +142,7 @@ and open the template in the editor.
                 <pallier>
                     <name>Tomates</name>
                     <logo>tomate.jpg</logo>
-                    <seuil>15000</seuil>
+                    <seuil>1500</seuil>
                     <idcible>3</idcible>
                     <ratio></ratio>
                     <typeratio>VITESSE</typeratio>
@@ -151,7 +151,7 @@ and open the template in the editor.
                 <pallier>
                     <name>Ail</name>
                     <logo>ail.jpg</logo>
-                    <seuil>20000</seuil>
+                    <seuil>2000</seuil>
                     <idcible>3</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -160,7 +160,7 @@ and open the template in the editor.
 		<pallier>
                     <name>Oignons</name>
                     <logo>oignon.jpg</logo>
-                    <seuil>22500</seuil>
+                    <seuil>2250</seuil>
                     <idcible>3</idcible>
                     <ratio></ratio>
                     <typeratio>VITESSE</typeratio>
@@ -169,7 +169,7 @@ and open the template in the editor.
 		<pallier>
                     <name>Gimgembre</name>
                     <logo>gimgembre.jpg</logo>
-                    <seuil>25000</seuil>
+                    <seuil>2500</seuil>
                     <idcible>3</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -192,7 +192,7 @@ and open the template in the editor.
                 <pallier>
                     <name>Poulet</name>
                     <logo>viande.jpg</logo>
-                    <seuil>25000</seuil>
+                    <seuil>2500</seuil>
                     <idcible>4</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -201,7 +201,7 @@ and open the template in the editor.
                 <pallier>
                     <name>Tomates</name>
                     <logo>tomate.jpg</logo>
-                    <seuil>30000</seuil>
+                    <seuil>3000</seuil>
                     <idcible>4</idcible>
                     <ratio></ratio>
                     <typeratio>VITESSE</typeratio>
@@ -210,7 +210,7 @@ and open the template in the editor.
                 <pallier>
                     <name>Ail</name>
                     <logo>ail.jpg</logo>
-                    <seuil>40000</seuil>
+                    <seuil>4000</seuil>
                     <idcible>4</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -219,7 +219,7 @@ and open the template in the editor.
 		<pallier>
                     <name>Oignons</name>
                     <logo>oignon.jpg</logo>
-                    <seuil>50000</seuil>
+                    <seuil>5000</seuil>
                     <idcible>4</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -251,7 +251,7 @@ and open the template in the editor.
                 <pallier>
                     <name>Viande</name>
                     <logo>viande.jpg</logo>
-                    <seuil>30000</seuil>
+                    <seuil>3000</seuil>
                     <idcible>5</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -260,7 +260,7 @@ and open the template in the editor.
                 <pallier>
                     <name>Tomates</name>
                     <logo>tomate.jpg</logo>
-                    <seuil>50000</seuil>
+                    <seuil>5000</seuil>
                     <idcible>5</idcible>
                     <ratio></ratio>
                     <typeratio>VITESSE</typeratio>
@@ -269,7 +269,7 @@ and open the template in the editor.
                 <pallier>
                     <name>Ail</name>
                     <logo>ail.jpg</logo>
-                    <seuil>65000</seuil>
+                    <seuil>6500</seuil>
                     <idcible>0</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -278,7 +278,7 @@ and open the template in the editor.
 		<pallier>
                     <name>Oignons</name>
                     <logo>oignon.jpg</logo>
-                    <seuil>80000</seuil>
+                    <seuil>8000</seuil>
                     <idcible>0</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -301,7 +301,7 @@ and open the template in the editor.
                 <pallier>
                     <name>Boucané</name>
                     <logo>viande.jpg</logo>
-                    <seuil>100000</seuil>
+                    <seuil>10000</seuil>
                     <idcible>6</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -310,7 +310,7 @@ and open the template in the editor.
                 <pallier>
                     <name>Tomates</name>
                     <logo>tomate.jpg</logo>
-                    <seuil>122000</seuil>
+                    <seuil>12200</seuil>
                     <idcible>6</idcible>
                     <ratio></ratio>
                     <typeratio>VITESSE</typeratio>
@@ -319,7 +319,7 @@ and open the template in the editor.
                 <pallier>
                     <name>Ail</name>
                     <logo>ail.jpg</logo>
-                    <seuil>125000</seuil>
+                    <seuil>12500</seuil>
                     <idcible>6</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -328,7 +328,7 @@ and open the template in the editor.
 		<pallier>
                     <name>Oignons</name>
                     <logo>oignon.jpg</logo>
-                    <seuil>150000</seuil>
+                    <seuil>15000</seuil>
                     <idcible>0</idcible>
                     <ratio></ratio>
                     <typeratio>GAIN</typeratio>
@@ -337,7 +337,7 @@ and open the template in the editor.
 		<pallier>
                     <name>Jacques</name>
                     <logo>jacques.jpg</logo>
-                    <seuil>180000</seuil>
+                    <seuil>18000</seuil>
                     <idcible>6</idcible>
                     <ratio></ratio>
                     <typeratio>VITESSE</typeratio>
@@ -359,7 +359,7 @@ and open the template in the editor.
         <pallier>
             <name>Cuisine au feu de bois</name>
             <logo>fire.png</logo>
-            <seuil>500000</seuil>
+            <seuil>5000</seuil>
             <idcible>0</idcible>
             <ratio></ratio>
             <typeratio>GAIN</typeratio>
@@ -370,7 +370,7 @@ and open the template in the editor.
         <pallier>
             <name>Pilon</name>
             <logo>rougail_tomate.jpg</logo>
-            <seuil>8000</seuil>
+            <seuil>800</seuil>
             <idcible>1</idcible>
             <ratio></ratio>
             <typeratio>VITESSE</typeratio>
@@ -379,7 +379,7 @@ and open the template in the editor.
         <pallier>
             <name>Légumes déja coupés</name>
             <logo>achard-de-legumes-creoles.jpeg</logo>
-            <seuil>15000</seuil>
+            <seuil>1500</seuil>
             <idcible>2</idcible>
             <ratio></ratio>
             <typeratio>VITESSE</typeratio>
@@ -388,7 +388,7 @@ and open the template in the editor.
         <pallier>
             <name>Saucisses fraiches</name>
             <logo>rougail-saucisse-de-la-reunion.jpg</logo>
-            <seuil>20000</seuil>
+            <seuil>2000</seuil>
             <idcible>3</idcible>
             <ratio></ratio>
             <typeratio>GAIN</typeratio>
@@ -397,7 +397,7 @@ and open the template in the editor.
         <pallier>
             <name>Poulet pays</name>
             <logo>poulet.jpg</logo>
-            <seuil>500000</seuil>
+            <seuil>5000</seuil>
             <idcible>4</idcible>
             <ratio></ratio>
             <typeratio>VITESSE</typeratio>
@@ -406,7 +406,7 @@ and open the template in the editor.
         <pallier>
             <name>Feuille de kaloupilé</name>
             <logo>cabris.jpg</logo>
-            <seuil>800000</seuil>
+            <seuil>8000</seuil>
             <idcible>5</idcible>
             <ratio></ratio>
             <typeratio>GAIN</typeratio>
@@ -415,7 +415,7 @@ and open the template in the editor.
         <pallier>
             <name>jacques haché</name>
             <logo>boucane.jpg</logo>
-            <seuil>1000000</seuil>
+            <seuil>10000</seuil>
             <idcible>6</idcible>
             <ratio></ratio>
             <typeratio>VITESSE</typeratio>
@@ -424,7 +424,7 @@ and open the template in the editor.
         <pallier>
             <name>Combava</name>
             <logo>rougail_tomate.jpg</logo>
-            <seuil>1200000</seuil>
+            <seuil>12000</seuil>
             <idcible>1</idcible>
             <ratio></ratio>
             <typeratio>GAIN</typeratio>
@@ -433,7 +433,7 @@ and open the template in the editor.
         <pallier>
             <name>Légumes du marché</name>
             <logo>achard-de-legumes-creoles.jepg</logo>
-            <seuil>1500000</seuil>
+            <seuil>15000</seuil>
             <idcible>2</idcible>
             <ratio></ratio>
             <typeratio>GAIN</typeratio>
@@ -442,7 +442,7 @@ and open the template in the editor.
         <pallier>
             <name>Saucisses fumées</name>
             <logo>rougail-saucisse-de-la-reunion.jpg</logo>
-            <seuil>2000000</seuil>
+            <seuil>20000</seuil>
             <idcible>3</idcible>
             <ratio></ratio>
             <typeratio>GAIN</typeratio>
@@ -453,16 +453,16 @@ and open the template in the editor.
         <pallier>
             <name>Marie</name>
             <logo>marie.png</logo>
-            <seuil>100000</seuil>
+            <seuil>10</seuil>
             <idcible>-1</idcible>
             <ratio></ratio>
             <typeratio>ANGE</typeratio>
             <unlocked>False</unlocked>
         </pallier>
         <pallier>
-            <name>Georges Marie</name>
+            <name>Joseph</name>
             <logo>joseph.png</logo>
-            <seuil>500000</seuil>
+            <seuil>50</seuil>
             <idcible>-1</idcible>
             <ratio></ratio>
             <typeratio>ANGE</typeratio>
