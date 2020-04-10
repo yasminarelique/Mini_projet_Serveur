@@ -432,7 +432,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Légumes du marché</name>
-            <logo>achard-de-legumes-creoles.jepg</logo>
+            <logo>achard-de-legumes-creoles.jpeg</logo>
             <seuil>15000</seuil>
             <idcible>2</idcible>
             <ratio></ratio>
