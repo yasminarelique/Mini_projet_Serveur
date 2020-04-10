@@ -197,7 +197,7 @@ public class Services {
         
         for (PallierType a : pallier ){
             if(!a.isUnlocked() && product.getQuantite()>=a.getSeuil()){
-                majPallier(username,a,product);
+                majPallier(a,product);
         }
         }
         // sauvegarder les changements du monde
@@ -243,13 +243,13 @@ public class Services {
              if(upgrade.getIdcible()==0){
                  List<ProductType> listeProduits = world.getProducts().getProduct();
                  for(ProductType p : listeProduits){
-                     majPallier(username,upgrade,p);
+                     majPallier(upgrade,p);
                  }
                  return true;
              }
              else {
                  ProductType p = findProductById(world, upgrade.getIdcible());
-                 majPallier(username,upgrade,p);
+                 majPallier(upgrade,p);
                  return true;
              }
          }
@@ -277,8 +277,7 @@ public class Services {
         return manager;
     }
     
-    public void majPallier(String username, PallierType a, ProductType product) throws JAXBException, FileNotFoundException{
-        World world = readWorldFromXml(username);
+    public void majPallier(PallierType a, ProductType product) throws JAXBException, FileNotFoundException{
         if(a.isUnlocked()==false && product.getQuantite()>=a.getSeuil()){
                 a.setUnlocked(true);
                 if(a.getTyperatio()==TyperatioType.VITESSE){
@@ -293,7 +292,6 @@ public class Services {
                     product.setRevenu(rev);
                     }
                 }
-                saveWorldToXml(world,username);
             }
     }
     
