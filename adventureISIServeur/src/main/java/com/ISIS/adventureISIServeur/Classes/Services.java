@@ -230,6 +230,12 @@ public class Services {
         double prixm = manager.getSeuil();
         double argent = world.getMoney();
         double argentRestant = argent - prixm;
+        
+        //si le joueur n'a pas assez d'argent pour payer, on annule l'opération
+            if (argentRestant < 0) {
+                return false;
+            }
+            
         world.setMoney(argentRestant);
 // sauvegarder les changements au monde
         saveWorldToXml(world, username);
