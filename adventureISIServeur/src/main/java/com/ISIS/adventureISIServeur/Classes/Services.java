@@ -82,14 +82,14 @@ public class Services {
         
         for (ProductType p : products) {
             if(p.isManagerUnlocked())  {
-                //int angelBonus = world.getAngelbonus();
+                int angelBonus = world.getAngelbonus();
                 int tempsProduit=p.getVitesse();
                 int nbreProduit= (int) (delta/tempsProduit);
                 long tempsRestant=p.getVitesse()-(delta%tempsProduit);
                 p.setTimeleft(tempsRestant);               
-                //double argent = p.getRevenu()*nbreProduit*(1+world.getActiveangels()*angelBonus/100);
-               double angeBonus = Math.pow(world.getAngelbonus(), world.getActiveangels());
-               double argent = p.getRevenu() * p.getQuantite() * angeBonus;
+                double argent = p.getRevenu()*nbreProduit*(1+world.getActiveangels()*angelBonus/100);
+               //double angeBonus = Math.pow(world.getAngelbonus(), world.getActiveangels());
+               //double argent = p.getRevenu() * p.getQuantite() * angeBonus;
                 world.setMoney(world.getMoney()+argent);
                 world.setScore(world.getScore()+argent);
                 long tempsrestant = tempsProduit * (nbreProduit + 1) - delta;
