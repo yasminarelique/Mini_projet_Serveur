@@ -44,7 +44,7 @@ public class Services {
        
     }
     
-    public World deleteWorld(String username)throws JAXBException, FileNotFoundException {
+    public void deleteWorld(String username)throws JAXBException, FileNotFoundException {
          World monde = readWorldFromXml(username);
          double angesActifs=monde.getActiveangels();
          double nombreAngesTotal = monde.getTotalangels();
@@ -63,7 +63,6 @@ public class Services {
             world.setScore(score);
             saveWorldToXml(world,username);
              
-            return world;
     }
     
     public double nombreAngesGagne(World world)throws JAXBException {
